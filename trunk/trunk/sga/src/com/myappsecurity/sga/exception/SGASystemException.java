@@ -10,7 +10,11 @@ package com.myappsecurity.sga.exception;
  * Created on October 15, 2007, 5:22 PM
  */
 public class SGASystemException  extends Exception {    
-    private String errorCode = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3022989526575061844L;
+	private String errorCode = "";
     
     /** Creates a new instance of DbConnectionException */
     public SGASystemException() {

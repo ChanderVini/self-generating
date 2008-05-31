@@ -13,7 +13,11 @@ import java.io.Serializable;
  * @created.on Mar 23, 2008
  */
 public class CreditCardVO implements Serializable {
-    private long cartId;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4110109924453737624L;
+	private long cartId;
     private String username = "";
     private String userTypeCd = "";
     private String appTypeCd = "";

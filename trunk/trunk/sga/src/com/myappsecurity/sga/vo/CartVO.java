@@ -8,7 +8,11 @@ import java.io.Serializable;
  * @created.on Jan 18, 2008
  */
 public class CartVO implements Serializable {
-    private long cartId = 0;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4442069598745973194L;
+	private long cartId = 0;
     private long productId = 0;
     private String productName = "";
     private int quantity = 0;

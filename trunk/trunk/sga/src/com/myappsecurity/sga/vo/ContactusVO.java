@@ -8,7 +8,11 @@ import java.io.Serializable;
  * @created.on Mar 27, 2008
  */
 public class ContactusVO implements Serializable {
-    private String username = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -4813640620436211743L;
+	private String username = "";
     private String email = "";
     private String subject = "";
     private String emailbody = "";

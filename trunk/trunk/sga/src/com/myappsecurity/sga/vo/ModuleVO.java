@@ -13,7 +13,11 @@ import java.io.Serializable;
  * @created.on Jan 12, 2008
  */
 public class ModuleVO implements Serializable {
-    private String moduleCd = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8979167426734400395L;
+	private String moduleCd = "";
     private String moduleName = "";
 
     public String getModuleCd() {

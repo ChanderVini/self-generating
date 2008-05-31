@@ -13,7 +13,11 @@ import java.io.Serializable;
  * @created.on Mar 27, 2008
  */
 public class ReviewVO implements Serializable {
-    private long reviewId = -1;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7210316344754802965L;
+	private long reviewId = -1;
     private String username = "";
     private String productId = "";
     private String message = "";

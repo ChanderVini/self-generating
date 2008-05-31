@@ -11,7 +11,6 @@ import com.myappsecurity.sga.vo.ShoppingCartVO;
 import com.myappsecurity.sga.vo.UserVO;
 import java.io.*;
 import java.lang.reflect.Method;
-import java.net.*;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -32,7 +31,12 @@ import org.apache.log4j.MDC;
  * @author Chander Singh
  */
 public class ProductServlet extends HttpServlet {
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5129181599012075037L;
+
+	/** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response

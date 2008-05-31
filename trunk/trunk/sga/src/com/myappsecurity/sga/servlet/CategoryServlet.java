@@ -10,7 +10,6 @@ import com.myappsecurity.sga.util.ApplicationUtil;
 import com.myappsecurity.sga.vo.CategoryVO;
 import com.myappsecurity.sga.vo.UserVO;
 import java.io.*;
-import java.net.*;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -23,7 +22,12 @@ import org.apache.log4j.MDC;
  */
 public class CategoryServlet extends HttpServlet {
    
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7003457042184886515L;
+
+	/** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response

@@ -24,10 +24,10 @@ public class CreditCardPayment {
     private String loginId = "";
     private String transactionKey = "";
     private String version = "";
-    private String url = "";
+    //private String url = "";
     
     private HttpsURLConnection urlConnection = null;
-    private final String URL_STRING = "https://secure.authorize.net/gateway/transact.dll";
+    //private final String URL_STRING = "https://secure.authorize.net/gateway/transact.dll";
     
     /** Creates a new instance of CreditCardPayment */
     public CreditCardPayment(String loginId, String transactionKey, String version, String url) throws SGASystemException {
@@ -36,11 +36,11 @@ public class CreditCardPayment {
         this.loginId = loginId;
         this.transactionKey = transactionKey;
         this.version = version;
-        if (url == null || "".equals (url.trim())) {
+        /*if (url == null || "".equals (url.trim())) {
             this.url = URL_STRING;
         } else {
             this.url = url;
-        }
+        }*/
         try {
             URL urlName = new URL (url);
             urlConnection = (HttpsURLConnection) urlName.openConnection();

@@ -24,7 +24,7 @@ public class SGAUtil {
     //Property for Formatting Integer (int) properties to String.
     private static NumberFormat intFmt = NumberFormat.getIntegerInstance();
     //Property for Formatting Decimal (double) properties to String with Percent format.
-    private static DecimalFormat pctFmt = new DecimalFormat ();
+    //private static DecimalFormat pctFmt = new DecimalFormat ();
     
     //Static section where Maximum Fraction digit a format can format is defined.
     static {

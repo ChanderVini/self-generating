@@ -14,7 +14,11 @@ import java.sql.Date;
  * @created.on Jan 18, 2008
  */
 public class AddressVO implements Serializable {
-    private long cartId = 0;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8208373682485176061L;
+	private long cartId = 0;
     private String addressType = "";
     private String firstName = "";
     private String lastName = "";

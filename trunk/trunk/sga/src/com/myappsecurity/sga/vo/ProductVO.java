@@ -9,7 +9,11 @@ import org.apache.commons.fileupload.FileItem;
  * @created.on Jan 17, 2008
  */
 public class ProductVO implements Serializable, Comparable {
-    private String appTypeCd = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -2247211520654116865L;
+	private String appTypeCd = "";
     private String appName = "";
     private long categoryId = 0;
     private String categoryName = "";

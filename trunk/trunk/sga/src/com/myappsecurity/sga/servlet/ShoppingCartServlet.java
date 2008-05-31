@@ -9,7 +9,6 @@ import com.myappsecurity.sga.vo.ShoppingCartVO;
 import com.myappsecurity.sga.vo.UserVO;
 import com.myappsecurity.sga.vo.WishlistVO;
 import java.io.*;
-import java.net.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -25,6 +24,11 @@ import org.apache.log4j.MDC;
  */
 public class ShoppingCartServlet extends HttpServlet {   
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8220467863231753154L;
+
+	/**
      * 
      * @param request
      * @param response

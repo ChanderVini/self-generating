@@ -12,7 +12,11 @@ import java.io.Serializable;
  * @author csingh
  */
 public class AdminVO implements Serializable {
-    private String applicationType = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 2633219768330752205L;
+	private String applicationType = "";
     private String applicationName = "";
     private String description = "";
     private String filterStatus = "false";
