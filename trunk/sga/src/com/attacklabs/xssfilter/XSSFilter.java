@@ -39,26 +39,27 @@ public class XSSFilter implements Filter {
             requestURI = requestURI.substring(index + contextPath.length() + 1);
 
             index = requestURI.indexOf("/");
-            
-            String appdetail = requestURI.substring(0, index);
-            String[] appdetails = appdetail.split("-");
-            if (appdetails.length > 1) {
-                String apptype = appdetails[0];
-                String appname = appdetails[1];
-                AdminVO adminVO = new AdminVO ();
-                adminVO.setApplicationName(appname);
-                adminVO.setApplicationType(apptype);
-                int loc = adminVOAL.indexOf(adminVO);
-                if (loc > -1) {
-                    adminVO = (AdminVO)adminVOAL.get(loc);
-                     if ("true".equals (adminVO.getFilterStatus())) {
-                         chain.doFilter( new XssRequestWrapper((HttpServletRequest) request), response);
-                     } else {
-                        chain.doFilter(request, response);
-                     }
-                } else {
-                    chain.doFilter(request, response);
-                }
+            if (index > -1) {
+	            String appdetail = requestURI.substring(0, index);
+	            String[] appdetails = appdetail.split("-");
+	            if (appdetails.length > 1) {
+	                String apptype = appdetails[0];
+	                String appname = appdetails[1];
+	                AdminVO adminVO = new AdminVO ();
+	                adminVO.setApplicationName(appname);
+	                adminVO.setApplicationType(apptype);
+	                int loc = adminVOAL.indexOf(adminVO);
+	                if (loc > -1) {
+	                    adminVO = (AdminVO)adminVOAL.get(loc);
+	                     if ("true".equals (adminVO.getFilterStatus())) {
+	                         chain.doFilter( new XssRequestWrapper((HttpServletRequest) request), response);
+	                     } else {
+	                        chain.doFilter(request, response);
+	                     }
+	                } else {
+	                    chain.doFilter(request, response);
+	                }
+	            }
             } else {
                 chain.doFilter(request, response);
             }           
