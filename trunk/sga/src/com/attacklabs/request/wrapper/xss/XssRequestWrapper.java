@@ -25,10 +25,10 @@ import javax.servlet.http.HttpServletRequestWrapper;
 public class XssRequestWrapper extends HttpServletRequestWrapper {
     
     //These are the characters which we want to filter.
-    private String[] filterChars = {"<", ">", "&lt", "&gt", "&#", "\"", "\\", "0x"};
+    //private String[] filterChars = {"<", ">", "&lt", "&gt", "&#", "\"", "\\", "0x"};
     
     //These are the characters which will get replaced with the subsequent character in the same position from filterChars array.
-    private String[] replacementChars = {" ", " ", " ", " ", "#", "'", "/", "0 x"};
+    //private String[] replacementChars = {" ", " ", " ", " ", "#", "'", "/", "0 x"};
     
     /** Creates a new instance of XssRequestWrapper */
     public XssRequestWrapper(HttpServletRequest request) {

@@ -12,7 +12,11 @@ import java.io.Serializable;
  * @author csingh
  */
 public class SearchVO implements Serializable {
-    private String appTypeCd = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5946680765120828187L;
+	private String appTypeCd = "";
     private String appName = "";
     private String categoryId = "";
     private String categoryName = "";

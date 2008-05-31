@@ -13,7 +13,11 @@ import java.io.Serializable;
  * @created.on Apr 1, 2008
  */
 public class WishlistVO implements Serializable {
-    private String appTypeCd = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -925314782406979852L;
+	private String appTypeCd = "";
     private String appName = "";
     private String userTypeCd = "";
     private String username = "";

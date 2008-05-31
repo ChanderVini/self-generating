@@ -29,9 +29,6 @@
 */
 package com.myappsecurity.sga.util;
 
-import java.util.*;
-
-
 public class PasswordGenerator {
     public double getRandomNum(int lbound, int ubound) {
         return (Math.floor(Math.random() * (ubound - lbound)) + lbound);

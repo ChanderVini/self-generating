@@ -10,7 +10,11 @@ import java.util.Arrays;
  * @created.on Jan 18, 2008
  */
 public class ShoppingCartVO implements Serializable {
-    private long cartId = 0;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5817408603316539642L;
+	private long cartId = 0;
     private String appTypeCd = "";
     private String appName = "";
     private String userTypeCd = "";

@@ -25,7 +25,12 @@ import org.apache.log4j.MDC;
  * */
 public class ContactusServlet extends HttpServlet {
    
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5720098339493615109L;
+
+	/** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response

@@ -13,7 +13,11 @@ import java.io.Serializable;
  * @created.on Jan 12, 2008
  */
 public class ApplicationProfileVO implements Serializable {
-    private String appType = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -8865447059427900287L;
+	private String appType = "";
     private String appName = "";
     private ModuleVO[] moduleVOs = new ModuleVO[0]; 
     

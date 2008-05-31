@@ -8,7 +8,11 @@ import java.io.Serializable;
  * @created.on Jan 16, 2008
  */
 public class UserVO implements Serializable {
-    private String appTypeCd = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 6678051805431106245L;
+	private String appTypeCd = "";
     private String appName = "";
     private String userTypeCd = "";
     private String userTypeName = "";

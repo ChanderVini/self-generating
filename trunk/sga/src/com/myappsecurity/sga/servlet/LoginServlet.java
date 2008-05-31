@@ -11,7 +11,6 @@ import com.myappsecurity.sga.util.ApplicationUtil;
 import com.myappsecurity.sga.vo.ShoppingCartVO;
 import com.myappsecurity.sga.vo.UserVO;
 import java.io.*;
-import java.net.*;
 
 import java.util.HashMap;
 import javax.servlet.*;
@@ -27,6 +26,11 @@ import org.apache.log4j.MDC;
 public class LoginServlet extends HttpServlet {
     
    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1664538184221052054L;
+
+/**
     * 
     * @param request
     * @param response

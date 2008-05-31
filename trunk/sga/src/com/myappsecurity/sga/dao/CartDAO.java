@@ -301,7 +301,6 @@ public class CartDAO {
                 userName = rs.getString (6);
                 String qty = rs.getString (7);
                 String productprice = rs.getString (8);
-                String createdt = rs.getString (9);
                 String completed = rs.getString (10);                
                 String productName = rs.getString (14);
                                 

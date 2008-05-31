@@ -4,7 +4,6 @@ import com.myappsecurity.sga.dao.AdminDAO;
 import com.myappsecurity.sga.util.ApplicationUtil;
 import com.myappsecurity.sga.vo.AdminVO;
 import java.io.*;
-import java.net.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +18,12 @@ import org.apache.log4j.MDC;
  */
 public class AdminServlet extends HttpServlet {
    
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -7841005698702066439L;
+
+	/** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response

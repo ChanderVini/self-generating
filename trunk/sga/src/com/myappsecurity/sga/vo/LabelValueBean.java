@@ -8,7 +8,11 @@ import java.io.Serializable;
  * @created.on January 8, 2008
  */
 public class LabelValueBean implements Serializable {
-    private String label = "";
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 4530082115067819463L;
+	private String label = "";
     private String value = "";
     
     /**

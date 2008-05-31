@@ -6,7 +6,6 @@ import com.myappsecurity.sga.vo.UserVO;
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.*;
 
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -22,7 +21,12 @@ import org.apache.log4j.MDC;
  */
 public class RegisterServlet extends HttpServlet {
    
-    /** 
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1948587658100333223L;
+
+	/** 
     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
     * @param request servlet request
     * @param response servlet response

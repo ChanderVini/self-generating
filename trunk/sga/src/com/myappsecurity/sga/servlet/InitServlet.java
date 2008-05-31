@@ -8,7 +8,6 @@ import com.myappsecurity.sga.dao.AdminDAO;
 import com.myappsecurity.sga.util.Constants;
 import com.myappsecurity.sga.vo.AdminVO;
 import java.io.*;
-import java.net.*;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -21,7 +20,8 @@ import org.apache.log4j.MDC;
  * Created on October 15, 2007, 4:26 PM
  */
 public class InitServlet extends HttpServlet {
-    private Logger logger = null;
+	private static final long serialVersionUID = -8290367152632820687L;
+	private Logger logger = null;
     
     /** Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
      * @param request servlet request
